@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="ChatGPT, chatbot, law firm, law firm chatbot">
+  <meta name="author" content="Homoki Péter">
+  <meta name="description" content="A basic Flask frontend for ChatGPT 3.5 requests with some prompt engineering for small law firms">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot-teszt</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='logo_hu.png') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+  <script defer src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+
+<body>
+  <div class='container'>
+    <div class="align-left"><img src="/static/logo_hu.png" alt="the logo of the law firm" style="width:10%;height:10%">
+    </div>
+    <div class="align-right"><button class="language-button" id="language-button" onclick="languageToggle()">to English</button></div>
+  </div>
+  <h1 style="padding-bottom: 20px; text-align: center; width: 50%; margin: 0 auto;">Chatbot</h1>
+
+  <p id="prWhatToDo" align="center"></p>
+  <form action="/" method="post">
+    <p style="text-align: center;">&nbsp;<br><textarea id="user_input" cols="80" name="user_input" rows="6" style="background-color:white" ;></textarea></p>
+    <p style="text-align: center;"><input id ="sendBtn" type="submit"/></p>
+  </form>
+
+  {% if result %}
+  <div class="result">
+    <p>{{ result }}</p>
+  </div>
+  {% else %}
+  <div class="result">
+    <p id="intro"></p>
+  </div>
+  {% endif %}
+
+  <div class="ToS">
+    <h4 id="ToSLabel" align="center"></h4>
+    <div id="ToSContent"></div>
+  </div>
+
+</body>
