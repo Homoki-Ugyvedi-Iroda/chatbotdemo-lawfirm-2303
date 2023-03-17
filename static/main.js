@@ -16,7 +16,7 @@ document.getElementById("ToSLabel").innerHTML = ToSLabel_HU;
 document.getElementById("ToSContent").innerHTML= ToScontent_HU;
 
 function resetWindow() {
-window.location.href = 'https://homoki.net';
+window.location.href = 'http://homokipeter.eu.pythonanywhere.com/';
 }
 
 function languageToggle() {
