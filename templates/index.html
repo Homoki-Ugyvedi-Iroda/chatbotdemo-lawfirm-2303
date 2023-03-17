@@ -23,8 +23,9 @@
 
   <p id="prWhatToDo" align="center"></p>
   <form action="/" method="post">
-    <p style="text-align: center;">&nbsp;<br><textarea id="user_input" cols="80" name="user_input" rows="6" style="background-color:white" ;></textarea></p>
-    <p style="text-align: center;"><input id ="sendBtn" type="submit"/></p>
+    <p style="text-align: center;">&nbsp;<br><textarea id="user_input" cols="80" name="user_input" rows="6" style="background-color: white; border-radius: 8px;padding: 10px;"></textarea></p>
+    <p style="text-align: center;"><input id ="sendBtn" type="submit" style="font-family: IBM Plex Mono Light, sans-serif; border-radius: 8px;"/></p>
+    <p style="text-align: center;"><input id ="resetBtn" type="reset" value="RESET" style="font-family: IBM Plex Mono Light, sans-serif; border-radius: 8px;" onclick="resetWindow()"/></p>
   </form>
 
   {% if result %}
