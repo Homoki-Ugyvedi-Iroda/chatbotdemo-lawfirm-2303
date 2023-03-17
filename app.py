@@ -49,8 +49,9 @@ def construct_prompt_chat_gpt(user_input):
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
-        messages = construct_prompt_chat_gpt(request.form["user_input"])
-
+        user_input_truncated = request.form["user_input"][0:2048]
+        messages = construct_prompt_chat_gpt(user_input_truncated)
+        
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             #max_tokens = 4096,
