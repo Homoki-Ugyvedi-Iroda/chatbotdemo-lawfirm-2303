@@ -12,8 +12,8 @@ def text_to_json(filename):
     return text_data
 
 def construct_prompt_chat_gpt(user_input):
-    prompt_qa_examples = text_to_json('prompt_qa_examples.json')
-    with open("prompt_instructions.txt", encoding='utf8', mode='r') as f:
+    prompt_qa_examples = text_to_json({{ url_for('static', filename='prompt_qa_examples.json')}})
+    with open({{ url_for('static', filename='prompt_instructions.txt')}}, encoding='utf8', mode='r') as f:
         prompt_instructions = f.read()
 
     messages = [
