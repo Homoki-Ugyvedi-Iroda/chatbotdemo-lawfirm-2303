@@ -6,7 +6,7 @@
   --color-red: red;
   --color-apricot: #e99363;
   --color-jordy-blue: #92d4f2;
-  --font-family-bold: "IBM Plex Mono Bold", sans-serif;
+  --font-family-bold: IBM Plex Mono Bold, sans-serif;
   font-family: IBM Plex Mono Light, sans-serif;
 }
 
@@ -21,6 +21,7 @@
   font-family: IBM Plex Mono Bold;
   src: url(/static/IBMPlexMono-Bold.ttf) format("truetype");
 }
+
 
 * {
   outline: none;
@@ -230,16 +231,6 @@ noscript>iframe {
   background: url(/static/background.png) no-repeat 100%;
   padding-bottom: 90px;
   padding-top: 90px;
-}
-
-.read-more-button {
-  color: var(--color-apricot);
-  display: inline-block;
-  font-family: var(--font-family-bold);
-  font-size: 20px;
-  line-height: 26px;
-  margin-top: 20px;
-  text-transform: uppercase;
 }
 
 .relative {
@@ -458,6 +449,7 @@ article .post-background {
   padding: 5px;
   border-style:solid;
   border-color:white;
+  border-radius: 8px;
   text-align: justify;
   }
 .ToS {
@@ -475,6 +467,6 @@ article .post-background {
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
+  border-radius: 8px;
   float: right;
-  font-family: IBM Plex Mono Light;
   }
