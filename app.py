@@ -107,8 +107,8 @@ def index():
             completion = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 # model="gpt-4",
-                max_tokens=2726,
-                # when using gpt-3.5, should be 4096 minus the messages size, including prompt and max. question size (2048), both of which is about 1370
+                max_tokens=2700,
+                # when using gpt-3.5, should be 4096 minus the messages size, including prompt and max. question size
                 messages=messages,
                 temperature=0.0
             )
