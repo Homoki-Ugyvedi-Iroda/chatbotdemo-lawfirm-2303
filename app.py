@@ -2,7 +2,7 @@ import os
 import openai
 import json
 import re
-import bleach.sanitizer
+import bleach
 from flask import Flask, redirect, render_template, request, url_for
 from flask_limiter import Limiter
 
