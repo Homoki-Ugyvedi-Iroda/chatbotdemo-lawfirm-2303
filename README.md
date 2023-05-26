@@ -5,4 +5,4 @@ Based on Python 3.7 + Flask, with some JavaScript.
 
 Based on https://github.com/openai/openai-quickstart-python, plus ideas and inspiration from https://github.com/baobabKoodaa/future (WeChatGPT+ project).
 
-If you want to clone it, after cloning use "pip install -r requirements.txt", add your own API-keys (from OpenAI and a Flask secret key) instead of ".env.sample" and "flask run".
+If you want to clone it, after cloning use `pip install -r requirements.txt`, add your own API-keys (from OpenAI and a Flask secret key) instead of `.env.sample` and `flask run`.
