@@ -13,7 +13,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 limiter = Limiter(
     app=app,
     key_func=lambda: request.remote_addr,
-    default_limits=["30 per day"],
+    default_limits=["1000 per day"],
     storage_uri="memory://"
 )
 
